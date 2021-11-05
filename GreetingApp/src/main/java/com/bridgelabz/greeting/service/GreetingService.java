@@ -16,7 +16,7 @@ public class GreetingService implements IGreetingService {
 	     User user = new User();
 	     ModelMapper modelMapper = new ModelMapper();
 	     modelMapper.map(userDto, user);
-	     return ("Hello " + user.getFirstName() + " " + user.getLastName());
+	     return ("Hello how are you " + user.getFirstName() + " " + user.getLastName());
 	 }
 	
 
