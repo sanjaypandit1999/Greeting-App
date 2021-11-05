@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bridgelabz.greeting.dto.UserDto;
+import com.bridgelabz.greeting.repository.IGreetingRepository;
 import com.bridgelabz.greeting.service.IGreetingService;
 
 @RestController
 @RequestMapping("/greet")
 public class GreetingController {
+	
 	@Autowired
 	private IGreetingService greetingService;
 	
@@ -22,5 +24,5 @@ public class GreetingController {
 	 @GetMapping("/customMessage")
 	 public String getCustomMessage(@RequestBody UserDto userDto) {
 		return greetingService.getCustomMessage(userDto);
-	    }
+	}
 }
