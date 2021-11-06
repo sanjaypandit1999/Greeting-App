@@ -36,7 +36,7 @@ public class GreetingController {
 		return greetingService.getGreetById(id);
 	}
 
-	@GetMapping("/all_greetings")
+	@GetMapping("/get_all_greetings")
 	public List<User> findAllGreeting() {
 		return greetingService.getAllMessage();
 	}
