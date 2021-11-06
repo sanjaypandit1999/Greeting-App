@@ -1,5 +1,6 @@
 package com.bridgelabz.greeting.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
@@ -31,6 +32,10 @@ public class GreetingService implements IGreetingService {
 	public User getGreetById(int id) {
 		Optional<User> greetById = iGreetingRepository.findById(id);
 		return greetById.orElse(null);
+	}
+
+	public List<User> getAllMessage() {
+		return iGreetingRepository.findAll();
 	}
 
 }

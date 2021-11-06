@@ -1,5 +1,7 @@
 package com.bridgelabz.greeting.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,5 +34,10 @@ public class GreetingController {
 	@GetMapping("/find_greeting")
 	public User findGreetById(@RequestParam int id) {
 		return greetingService.getGreetById(id);
+	}
+
+	@GetMapping("/all_greetings")
+	public List<User> findAllGreeting() {
+		return greetingService.getAllMessage();
 	}
 }
