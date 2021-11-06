@@ -38,4 +38,13 @@ public class GreetingService implements IGreetingService {
 		return iGreetingRepository.findAll();
 	}
 
+	public String deleteGreet(int id) {
+		Optional<User> greetingMessage = iGreetingRepository.findById(id);
+		if (greetingMessage.isPresent()) {
+			iGreetingRepository.delete(greetingMessage.get());
+			return "Record deleted successfully";
+		}
+		return "Record not available";
+	}
+
 }
