@@ -47,4 +47,15 @@ public class GreetingService implements IGreetingService {
 		return "Record not available";
 	}
 
+	@Override
+	public User updateMassage(int id, UserDto userDto) {
+		Optional<User> update = iGreetingRepository.findById(id);
+		if(update.isPresent()) {
+			update.get().setFirstName(userDto.getFirstName());
+			update.get().setLastName(userDto.getLastName());
+			iGreetingRepository.save(update.get());
+		}
+		return update.get();
+	}
+
 }
