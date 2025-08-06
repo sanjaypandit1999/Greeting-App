@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "clientName": "qa_manual1",
+    "operation": "LOGIN",
+    "details": "User login successful",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:30:45.123Z"
+  },
+  {
+    "id": 2,
+    "clientName": "qa_manual1",
+    "operation": "CREATE_GREETING",
+    "details": "Created greeting for John Doe",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:31:20.456Z"
+  },
+  {
+    "id": 3,
+    "clientName": "qa_manual1",
+    "operation": "UPDATE_GREETING",
+    "details": "Updated greeting with ID: 1 for Jane Smith",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:32:15.789Z"
+  },
+  {
+    "id": 4,
+    "clientName": "qa_manual1",
+    "operation": "VIEW_GREETING",
+    "details": "Viewed greeting with ID: 1",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:33:10.012Z"
+  },
+  {
+    "id": 5,
+    "clientName": "qa_manual1",
+    "operation": "DELETE_GREETING",
+    "details": "Deleted greeting with ID: 2",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:34:05.345Z"
+  },
+  {
+    "id": 6,
+    "clientName": "qa_manual1",
+    "operation": "EXPORT_DATA",
+    "details": "Exported user data",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:35:00.678Z"
+  },
+  {
+    "id": 7,
+    "clientName": "qa_manual1",
+    "operation": "LOGOUT",
+    "details": "User logout successful",
+    "ipAddress": "192.168.1.100",
+    "timestamp": "2024-01-15T10:36:30.901Z"
+  }
+]
